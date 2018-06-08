@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>视频教程</title>
+		<link rel="stylesheet" href="../public/css/base.css">
+		<link rel="stylesheet" href="../public/css/common.css">
+		<script src="../public/js/jquery-2.2.4.min.js"></script>
+		<script src="../public/js/jquery.SuperSlide.2.1.1.js"></script>
+	</head>
+	<style>
+	      @font-face {font-family: "iconfont";
+          src: url('../public/icon/iconfont.eot'); /* IE9*/
+          src: url('../public/icon/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('../public/icon/iconfont.woff') format('woff'), /* chrome, firefox */
+          url('../public/icon/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+          url('../public/icon/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+        }
+
+        .iconfont {
+          font-family:"iconfont" !important;
+          font-size:16px;
+          font-style:normal;
+          -webkit-font-smoothing: antialiased;
+          -webkit-text-stroke-width: 0.2px;
+          -moz-osx-font-smoothing: grayscale;
+        }
+	</style>
+</head>
+
+<body>
+	<!-- start: header-->
+	@@include('./common/header.html')
+	<!--end :header-->
+	<!--start:权威证书-->
+	<div class="container">
+		<div class="addrss-nav">当前位置：<a href="#">星航道</a> &gt; <a href="#">视频教程</a> &gt; </div>
+		@@include('./common/containerLeft.html', {
+			"name": "专业知识"
+  		})
+		@@include('./common/containerRight.html')
+		
+	</div>
+	<!--end:权威证书-->
+	<!--	start:footer-->
+	@@include('./common/footer.html')
+	<!--	start:end-->
+	<script>
+		$('.container .container-right .item-2-wrap li').eq(0).addClass('li1');
+		$('.container .container-right .item-2-wrap li').eq(1).addClass('li2');
+		$('.container .container-right .item-2-wrap li').eq(2).addClass('li2');
+	</script>
+</body>
+
+</html>

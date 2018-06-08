@@ -1,0 +1,1196 @@
+.home-wrapper {
+
+	padding-top: 26px;
+	background: #fff; // 中力公告
+	.home-bulletin {
+		height: 32px;
+		width: 1098px;
+		border: 1px solid #ccc;
+		margin: 0 auto;
+		border-radius: 10px;
+		margin-bottom: 14px;
+		overflow: hidden;
+		.left {
+			width: 150px;
+			height: 32px;
+			color: #fd690d;
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 32px;
+			letter-spacing: 6px;
+			float: left;
+			i {
+				display: block;
+				width: 40px;
+				height: 32px;
+				float: left;
+				img {
+					width: 32px;
+					height: 23px;
+					display: block;
+					margin: 5px auto;
+				}
+			}
+		}
+		.right {
+			float: left;
+			width: 946px;
+			line-height: 32px;
+			overflow: hidden;
+			.bd {
+				ul {
+					height: 32px;
+				}
+				height: 32px;
+				li {
+					float: left;
+					min-width: 946px;
+					text-align: center;
+				}
+			}
+		}
+
+	} //行业头条
+	.home-new {
+		width: 1100px;
+		margin: 0 auto;
+		height: 240px;
+		padding-bottom: 20px;
+		.homeNewBt {
+			overflow: hidden;
+			h3 {
+				font-weight: normal;
+				width: 110px;
+				height: 34px;
+				background: #fe7902;
+				color: #fff;
+				line-height: 34px;
+				text-align: center;
+				font-size: 18px;
+				margin-top: 16px;
+				margin-left: 16px;
+			}
+		}
+		.touTiao {
+			width: 690px;
+			height: 236px;
+			float: left;
+			border: 2px solid #ccc;
+			.content {
+				padding: 0  14px 14px;
+				height: 158px;
+				margin-top: 14px; 
+				zoom:1;
+				.img {
+					width: 240px;
+					height: 158px;
+					float: left;
+					img,
+					a {
+						display: block;
+						width: 240px;
+						height: 158px;
+					}
+
+				}
+				.list {
+					float: left;
+					height: 158px;
+					padding: 0 34px;
+					width: 352px;
+					h3 {
+						font-size: 18px;
+					}
+					.home-new-top {
+						.picList {
+							li {
+								height: 24px;
+								line-height: 24px;
+								overflow: hidden;
+								text-overflow: ellipsis;
+								white-space: nowrap;
+
+								a {
+									color: #000;
+									&:hover {
+										color: #fe7902;
+									}
+								}
+							}
+						}
+					}
+
+				}
+			}
+		}
+		.zhiNan {
+			float: right;
+			width: 390px;
+			height: 236px;
+			border: 2px solid #ccc;
+			.list ul,
+			.list {
+				overflow: hidden;
+			}
+			.list ul{
+				padding-top:14px; 
+				height: 190px;
+			}
+			.list ul li {
+				float: left;
+				width: 72px;
+				height: 72px;
+				border: 1px solid #ccc;
+				margin-left: 14px;
+				margin-bottom: 14px;
+				border-radius: 10px;
+				position: relative;
+				a {
+					display: block;
+					height: 72px;
+					width: 72px;
+					position: absolute;
+					color: #000;
+					text-align: center;
+					&:hover {
+						color: #fe7902;
+					}
+				}
+				i {
+					display: block;
+					margin: 8px auto 2px auto;
+					width: 36px;
+					height: 36px;
+					img {
+						height: 36px;
+						display: block;
+						margin: 0 auto;
+					}
+				}
+				span {
+					text-align: center;
+				}
+			}
+		}
+
+
+	} //学院荣誉
+	.home-glory {
+		background: #f2f2f2;
+		.home-glory-wrapper {
+			width: 1100px;
+			margin: 0 auto;
+			height: 288px;
+			padding: 70px;
+
+		}
+		.glory-left {
+			width: 550px;
+			float: left;
+			height: 288px;
+			img {
+				width: 550px;
+				height: 288px;
+			}
+		}
+		.glory-right {
+			float: left;
+			width: 550px;
+			height: 288px;
+			background: #fff;
+			position: relative;
+			.glory-tab-item {
+				height: 208px;
+				margin-top: 20px;
+				margin-left: 38px;
+				position: relative;
+				display: none;
+				.info {
+					line-height: 28px;
+					margin-right: 48px;
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					-webkit-line-clamp: 5;
+					overflow: hidden;
+					height: 140px;
+				}
+				h3 {
+					font-size: 20px;
+					height: 46px;
+					font-weight: bold;
+				}
+				.xyry li {
+					font-size: 14px;
+					line-height: 28px;
+					cursor: pointer;
+					color: #333;
+				}
+				.xyry .on {
+					color: #fe7902;
+				}
+				.xyry-zs {
+					height: 180px;
+					width: 254px;
+					position: absolute;
+					top: 0px;
+					right: 34px;
+					overflow: hidden;
+					img {
+						width: 254px;
+						height: 180px;
+						display: none;
+					}
+				}
+			}
+			.glory-nav {
+				height: 38px;
+				margin-left: 30px;
+				li {
+					height: 36px;
+					border: 1px solid #ccc;
+					border-radius: 5px;
+					float: left;
+					padding: 0 14px;
+					line-height: 36px;
+					margin-right: 14px;
+					cursor: pointer;
+					a {
+						color: #000;
+					}
+					&:hover a {
+						color: #fe7902;
+					}
+				}
+				.on {
+					border: 1px solid #fe7902;
+					color: #fe7902;
+				}
+
+			}
+		}
+
+	} //权威证书
+	.homeNumeClass {
+		width: 1100px;
+		margin: 0 auto;
+		padding-top: 20px;
+		height: 76px;
+		position: relative;
+		.homeNumeName {
+			height: 74px;
+			width: 300px;
+			margin: 0 auto;
+			position: relative;
+			font-size: 34px;
+			div {
+				position: absolute;
+				font-weight: 500;
+			}
+			.left {
+				left: 0;
+				width: 140px;
+				height: 54px;
+				background: #fe7902;
+				text-align: center;
+				z-index: 99;
+				top: 10px;
+				line-height: 54px;
+				color: #fff;
+				letter-spacing: 10px;
+			}
+			.right {
+				right: 0;
+				width: 200px;
+				height: 72px;
+				line-height: 72px;
+				border: 2px solid #fe7902;
+				text-align: center;
+				padding-left: 30px;
+				color: #fe7902;
+				letter-spacing: 10px;
+			}
+		}
+		.homeNumeConn {
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			z-index: 6;
+			font-size: 16px;
+			line-height: 22px;
+
+			height: 22px;
+			div {
+				width: 386px;
+				border-bottom: 2px solid #fe7902;
+				margin-top: 30px;
+			}
+			.left {
+				float: left;
+			}
+			.right {
+				float: right;
+				a {
+					float: right;
+					color: #000;
+				}
+			}
+		}
+	}
+	.home-prove {
+		.list {
+			height: 412px;
+			width: 1100px;
+			overflow: hidden;
+			margin: 0 auto;
+			padding-bottom: 60px;
+			ul {
+				width: 1120px;
+			}
+			li {
+				float: left;
+				width: 260px;
+				height: 186px;
+				margin-right: 20px;
+				margin-top: 20px;
+
+				img {
+					width: 260px;
+					height: 186px;
+				}
+			}
+		}
+	} //专业课程
+	.home-lesson {
+		background: #f2f2f2;
+		height: 946px;
+		.lesson-list {
+			width: 904px;
+			height: 600px;
+			margin: 0 auto;
+			overflow: hidden;
+			ul {
+				width: 928px;
+				height: 624px;
+			}
+			li {
+				width: 284px;
+				height: 284px;
+				margin-top: 24px;
+				margin-right: 24px;
+				float: left;
+				img {
+					width: 284px;
+					height: 284px;
+					float: left;
+				}
+			}
+		}
+		.kernel-list {
+			width: 904px;
+			height: 238px;
+			margin: 0 auto;
+			h3 {
+				font-size: 18px;
+				letter-spacing: 10px;
+				color: red;
+				line-height: 60px;
+			}
+			ul {
+				li {
+					float: left;
+					width: (904px/4);
+					line-height: 50px;
+					height: 50px;
+					overflow: hidden;
+					letter-spacing: 5px;
+					font-size: 18px;
+					a {
+						color: #000;
+					}
+					span {
+						display: block;
+						width: 22px;
+						height: 22px;
+						background: #fe7902;
+						float: left;
+						border-radius: 5px;
+						margin-top: 14px;
+						margin-right: 10px;
+
+					}
+				}
+				.gd {
+					float: right;
+					width: (904px/4);
+					a {
+						display: block;
+						width: 146px;
+						height: 38px;
+						background: #fe7902;
+						float: left;
+						line-height: 38px;
+						color: #fff;
+						border-radius: 5px;
+						text-align: center;
+					}
+				}
+			}
+		}
+	} //明星导师 
+	.home-teacher {
+		background: #fff;
+		height: 606px;
+		.teacher-list {
+			width: 1200px;
+			margin: 0 auto;
+			height: 360px;
+			padding-top: 48px;
+			position: relative;
+			.next,
+			.prev {
+				position: absolute;
+				width: 23px;
+				height: 53px;
+				top: 50%;
+				margin-top: -26px;
+
+				img {
+					width: 23px;
+					height: 53px;
+				}
+			}
+			.next {
+				left: 0;
+			}
+			.prev {
+				right: 0;
+			}
+			.bd {
+				width: 1100px;
+				margin: 0 auto;
+				ul {
+					width: 1120px;
+				}
+				li {
+					width: 255px;
+					height: 357px;
+					border: 1px solid #fe7902;
+					float: left;
+					margin-right: 20px;
+					> p {
+						text-align: center;
+						height: 30px;
+						line-height: 30px;
+					}
+					a {
+						display: block;
+						height: 326px;
+						position: relative;
+						color: #fff;
+						div {
+							position: absolute;
+							bottom: 0;
+							left: 0;
+							right: 0;
+							height: 60px;
+							img {
+								height: 12px;
+								width: 255px;
+							}
+							p {
+								height: 40px;
+								line-height: 40px;
+								span {
+									font-size: 20px;
+									float: left;
+									margin-left: 5px;
+								}
+								em {
+									float: right;
+									font-size: 16px;
+									margin-right: 5px;
+								}
+							}
+						}
+						img {
+							width: 255px;
+							height: 326px;
+						}
+					}
+				}
+			}
+		}
+	} //优秀学员
+	.home-student {
+		height: 500px;
+		background: #f2f2f2;
+		.student-list {
+			width: 1200px;
+			margin: 0 auto;
+			position: relative;
+			height: 296px;
+			padding-top: 18px;
+			.bd {
+				width: 1100px;
+				margin: 0 auto;
+				ul {
+					width: 1110px;
+				}
+				li {
+					width: 212px;
+					height: 296px;
+					float: left;
+					margin-right: 10px;
+					img {
+						width: 212px;
+						height: 296px;
+					}
+				}
+			}
+			.next,
+			.prev {
+				position: absolute;
+				width: 23px;
+				height: 53px;
+				top: 50%;
+				margin-top: -26px;
+
+				img {
+					width: 23px;
+					height: 53px;
+				}
+			}
+			.next {
+				left: 0;
+			}
+			.prev {
+				right: 0;
+			}
+		}
+
+	} //就业统计
+	.home-stats {
+		width: 1100px;
+		margin: 0 auto;
+		overflow: hidden;
+		.stats-bt {
+			height: 47px;
+			width: 100%;
+			position: relative;
+			border-bottom: 1px solid #000;
+			h3 {
+				float: left;
+				width: 96px;
+				border-bottom: 2px solid #fe7902;
+				height: 46px;
+				line-height: 46px;
+				font-size: 22px;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				z-index: 9
+			}
+			p {
+				position: absolute;
+				left: 118px;
+				right: 83px;
+				height: 47px;
+				top: 0;
+				line-height: 47px;
+			}
+			a {
+				display: block;
+				width: 83px;
+				position: absolute;
+				height: 47px;
+				right: 0;
+				top: 0;
+				text-align: center;
+				line-height: 47px;
+				color: #000;
+			}
+		}
+		.stats-left {
+			width: 688px;
+			float: left;
+			.top {
+				margin-left: 30px;
+				margin-top: 30px;
+				h3 {
+					color: #fe7902;
+					font-size: 20px;
+					line-height: 48px;
+				}
+				p {
+					line-height: 28px;
+				}
+			}
+			.bottom {
+				width: 688px;
+				margin: 20px 0;
+				table {
+					width: 688px;
+					border-collapse: collapse;
+					height: 420px;
+					overflow: hidden;
+					position: relative;
+					thead {
+						line-height: 36px;
+						background: #fe7902;
+						th {
+							color: #fff;
+						}
+					}
+					tbody {
+						tr {
+							height: 42px;
+							line-height: 42px;
+							margin: 0;
+							padding: 0;
+							display: block;
+							td {
+								display: block;
+								float: left;
+								height: 42px;
+								overflow: hidden;
+								text-overflow: ellipsis;
+								white-space: nowrap;
+							}
+						}
+					}
+				}
+			}
+		}
+		.stats-right {
+			width: 406px;
+			float: right;
+			.stats-top {
+				height: 154px;
+				width: 380px;
+				margin: 30px auto 30px auto;
+				img {
+					height: 154px;
+					width: 380px;
+				}
+			}
+			.stats-bottom {
+				.bd {
+					ul li {
+						height: 42px;
+						line-height: 42px;
+
+						a {
+							color: #000;
+							font-size: 16px;
+							display: block;
+							overflow: hidden;
+							text-overflow: ellipsis;
+							white-space: nowrap;
+							margin-left: 16px;
+							position: relative;
+							padding-left: 30px;
+							span {
+								display: block;
+								width: 20px;
+								height: 20px;
+								float: left;
+								background: #fe7902;
+								position: absolute;
+								top: 50%;
+								margin-top: -10px; 
+								left: 5px;
+								border-radius: 5px;
+							}
+//							&:before {
+//								width: 15px;
+//								height: 15px;
+//								background: #fe7902;
+//								display: inline-block;
+//								content: "";
+//								margin-right: 8px;
+//								border-radius: 5px;
+// 
+//							}
+						}
+
+					}
+				}
+			}
+		}
+	} //开班合影
+	.home-photo {
+		background: #f2f2f2;
+		overflow: hidden;
+		.stats-bt {
+			height: 47px;
+			width: 100%;
+			position: relative;
+			border-bottom: 1px solid #000;
+			h3 {
+				float: left;
+				width: 96px;
+				border-bottom: 2px solid #fe7902;
+				height: 46px;
+				line-height: 46px;
+				font-size: 22px;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				z-index: 9
+			}
+			p {
+				position: absolute;
+				left: 118px;
+				right: 83px;
+				height: 47px;
+				top: 0;
+				line-height: 47px;
+			}
+			a {
+				display: block;
+				width: 83px;
+				position: absolute;
+				height: 47px;
+				right: 0;
+				top: 0;
+				text-align: center;
+				line-height: 47px;
+				color: #000;
+			}
+		}
+		.photo-wrapper {
+			width: 1100px;
+			margin: 0 auto;
+			.photo-left {
+				width: 856px;
+				overflow: hidden;
+				float: left;
+				.list {
+					width: 886px;
+					margin-top: 24px;
+					li {
+						width: 193px;
+						height: 156px;
+						float: left;
+						margin-right: 30px;
+						img {
+							width: 193px;
+							height: 124px;
+							display: block;
+						}
+						p {
+							height: 30px;
+							line-height: 30px;
+							text-align: center;
+							overflow: hidden;
+							text-overflow: ellipsis;
+							white-space: nowrap;
+
+						}
+					}
+					.onw {
+						width: 424px;
+						height: 332px;
+						margin-right: 16px;
+						img {
+							width: 424px;
+							height: 280px;
+						}
+						p {
+							line-height: 48px;
+						}
+					}
+				}
+			}
+			.photo-right {
+				float: right;
+				width: 220px;
+				.list {
+					overflow: hidden;
+					padding-top: 15px;
+					ul {
+						li {
+							width: 220px;
+							height: 50px;
+							margin-top: 10px;
+							img {
+								display: block;
+								float: left;
+								width: 89px;
+								height: 50px;
+							}
+							p {
+								width: 120px;
+								float: right;
+								overflow: hidden;
+								text-overflow: ellipsis;
+								display: -webkit-box;
+								-webkit-box-orient: vertical;
+								-webkit-line-clamp: 2;
+								line-height: 25px;
+
+							}
+						}
+					}
+				}
+			}
+		}
+	} //学院环境
+	.home-health {
+		.health-wrapper {
+			width: 1200px;
+			margin: 0 auto;
+			overflow: hidden;
+			padding-bottom: 50px;
+			position: relative;
+			padding-top: 20px;
+			.next,
+			.prev {
+				position: absolute;
+				width: 23px;
+				height: 53px;
+				top: 50%;
+				margin-top: -26px;
+
+				img {
+					width: 23px;
+					height: 53px;
+				}
+			}
+			.next {
+				left: 0;
+			}
+			.prev {
+				right: 0;
+			}
+			.picList {
+				width: 1200px;
+				margin-top: 20px;
+
+			}
+			.bd {
+				width: 1100px;
+				margin: 0 auto;
+				overflow: hidden;
+				li {
+					height: 382px;
+					width: 270px;
+					float: left;
+					overflow: hidden;
+					margin-right: 10px;
+					img {
+						width: 270px;
+						height: 186px;
+						margin-bottom: 10px;
+						display: block;
+					}
+				}
+			}
+		}
+
+
+	}
+	.home-question {
+		height: 416px;
+		background: #f2f2f2;
+		width: 100%;
+		.question-wrapper {
+			width: 1100px;
+			margin: 0 auto;
+			height: 416px;
+			padding-top: 60px;
+		}
+		.question {
+			width: 545px;
+			border: 1px solid #ccc;
+			h3 {
+				width: 110px;
+				height: 32px;
+				background: #fe7902;
+				line-height: 32px;
+				text-align: center;
+				font-weight: normal;
+				color: #fff;
+				margin-left: 14px;
+				margin-top: 22px;
+				margin-bottom: 16px;
+				float: left;
+			}
+		}
+		.question-left {
+			float: left;
+			padding-bottom: 12px;
+			.left {
+				width: 236px;
+				height: 206px;
+				margin-left: 14px;
+				float: left;
+				img {
+					display: block;
+					width: 236px;
+					height: 206px;
+				}
+			}
+			.right {
+				float: right;
+				width: 278px;
+				height: 206px;
+				overflow: hidden;
+				a {
+					color: #000
+				}
+				.list {
+					li {
+						height: 62px;
+						margin-bottom: 12px;
+						.imgBox {
+							width: 50px;
+							height: 60px;
+							float: left;
+							img {
+								display: block;
+								width: 100%;
+								height: 100%;
+							}
+						}
+						.newBox {
+							float: left;
+							margin-left: 14px;
+							width: 186px;
+							h4 {
+								width: 186px;
+								font-size: 16px;
+								color: #fe7902;
+								overflow: hidden;
+								text-overflow: ellipsis;
+								white-space: normal;
+								height: 24px;
+								line-height: 24px;
+							}
+							p {
+								font-size: 12px;
+								text-overflow: ellipsis;
+								display: -webkit-box;
+								-webkit-box-orient: vertical;
+								-webkit-line-clamp: 2;
+								overflow: hidden;
+
+							}
+						}
+					}
+				}
+			}
+		}
+		.question-right {
+			float: right;
+			padding-bottom: 12px;
+			.left {
+				width: 235px;
+				height: 206px;
+				float: left;
+				margin-left: 14px;
+				img {
+					width: 235px;
+					height: 206px;
+				}
+			}
+			.right {
+				float: left;
+				width: 260px;
+				margin-left: 16px;
+				li {
+					width: 260px;
+					height: 18px;
+					line-height: 18px;
+					position: relative;
+					margin-bottom: 18px;
+					a {
+						display: block;
+						word-break: keep-all;
+						white-space: nowrap;
+						text-overflow: ellipsis;
+						overflow: hidden;
+						width: 230px;
+						color: #000;
+						&:before {
+							width: 8px;
+							height: 8px;
+							background: #fe7902;
+							display: inline-block;
+							content: '';
+							margin-right: 8px;
+						}
+					}
+					span {
+						display: block;
+						position: absolute;
+						height: 18px;
+						right: 0;
+						top: 0;
+						bottom: 0;
+						color: #888;
+
+
+					}
+					i {}
+				}
+			}
+		}
+
+	}
+	.home-partner {
+		width: 1100px;
+		margin: 0 auto;
+
+		.list {
+			overflow: hidden;
+			padding-top: 30px;
+			li {
+				width: (1100px/5);
+				height: 76px;
+				float: left;
+				margin-bottom: 16px;
+				img {
+					width: 200px;
+					height: 76px;
+					margin: 0 auto;
+				}
+			}
+		}
+
+	}
+	.home-guide {
+		background: #f2f2f2;
+		height: 300px;
+		.guide-wrapper {
+			width: 1100px;
+			margin: 0 auto;
+			height: 300px;
+		}
+		.guide-top {
+			padding: 40px 0 50px;
+			overflow: hidden;
+			.wrap {
+				width: 1100px;
+				margin: 0 auto;
+				li {
+					float: left;
+					border: 1px solid #fe7902;
+					width: 230px;
+					height: 68px;
+					background: #fff;
+					position: relative;
+					margin-left: 12px;
+					padding: 20px 17px 12px 12px;
+					.info {
+						margin-left: 58px;
+						h4 {
+							font-size: 16px;
+							margin-bottom: 5px;
+							font-weight: bold;
+							word-break: keep-all;
+							white-space: nowrap;
+							text-overflow: ellipsis;
+							overflow: hidden;
+						}
+						p {
+							font-size: 12px;
+							color: #333;
+							line-height: 22px;
+							display: -webkit-box;
+							-webkit-box-orient: vertical;
+							-webkit-line-clamp: 2;
+							overflow: hidden;
+							height: 44px;
+						}
+					}
+					i {
+						position: absolute;
+						left: 12px;
+						top: 50%;
+						margin-top: -22px;
+						width: 44px;
+						height: 44px;
+						background: #fe7902;
+						border-radius: 50%;
+						background-repeat: no-repeat;
+						background-position: center;
+						overflow: hidden;
+
+					}
+				}
+			}
+		}
+		.guide-bottom {
+			.wrap.qg {
+				background-color: #eee;
+				padding: 10px;
+				overflow: hidden;
+				.hd {
+					background: #fe7902;
+					color: #fff;
+					width: 50px;
+					height: 50px;
+					text-align: center;
+					line-height: 1.3;
+					float: left;
+					em {
+						padding-top: 8px;
+						display: block;
+						font-weight: bold;
+					}
+				}
+				.nav {
+					width: 1023px;
+					height: 50px;
+					overflow: hidden;
+					margin-top: 2px;
+					padding-left: 5px;
+					float: left;
+					ul {
+						width: 1038px;
+
+						li {
+							a {
+								color: #000;
+							}
+							float: left;
+							width: 63px;
+							line-height: 14px;
+							text-align: center;
+							border-right: 1px solid #333;
+							margin: 5px 0;
+							a:hover {
+								color: #fe7902;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

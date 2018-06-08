@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<title>首页</title>
+	<script>
+		(function() {
+			var h = window.document.documentElement,
+				dir = 1,
+				timer, s = function() {
+					h.setAttribute('data-dir', dir);
+					var w = h.getBoundingClientRect().width,
+						f = w / (7.2 * dir);
+					h.style.fontSize = f + 'px';
+					document.addEventListener('DOMContentLoaded', function() {
+						document.body.style.fontSize = 0.24 + 'rem';
+					});
+					var sh = parseFloat(h.style.fontSize),
+						eh = parseFloat(window.getComputedStyle(h).fontSize);
+					if (sh !== eh) h.style.fontSize = sh * (sh / eh) + 'px';
+				};
+			window.addEventListener('resize', function() {
+				clearTimeout(timer), timer = setTimeout(s, 300)
+			}, !1), window.addEventListener('pageshow', function(b) {
+				b.persisted && (clearTimeout(time), time = setTimeout(s, 300))
+			}, !1), s();
+		})();
+
+	</script>
+	<link rel="stylesheet" href="../public/css/base.css">
+	<link rel="stylesheet" href="../public/css/style.css">
+	<link rel="stylesheet" href="../public/swiper/css/swiper.min.css">
+	<script src="../public/swiper/js/swiper.min.js"></script>
+	<script src="../public/js/jquery-3.3.1.min.js"></script>
+
+</head>
+
+<body>
+	@@include('./common/header.html')
+	<div class="show-wrapper">
+		<div class="bt">
+			<p class="left"><a href="#">首页</a><em>&gt;</em><a href="#">视频列表</a></p>
+			<a href="#" class="right">更多+</a>
+		</div>
+		<h2>星航道1711期毕业学员牟春东，毕业分配山东老家月薪一万+！</h2>
+		<div class="p1">
+			<span>文章来源：星航道</span>
+			<span>发布日期：2018-03-28</span>
+		</div>
+		<img src="../public/images/zw.png" style="height: 1.2rem">
+		<p>星航道1711期毕业学员牟春东，毕业分配于山东老家附近的太阳部落俱乐部，月薪一万多，加油，你会做得更好!</p>
+		<img src="../public/images/zw.png" style="height: 3rem">
+		<img src="../public/images/zw.png" style="height: 5rem">
+		<div class="btn">
+			<a href="#" class="btn1"><img src="../public/images/icon-money.png" >0首付 先就业后付款</a>
+			<a href="#" class="btn2"><img src="../public/images/icon-message.png" >点击咨询学院老师</a>
+		</div>
+		<div class="showPage">
+			<a href="#"><span>上一章</span>：星航道1710期毕业学员李佳祥，毕业月薪两万+，星航道为你骄傲！</a>
+			<a href="#"><span>下一章</span>：星航道1710期毕业学员李佳祥，毕业月薪两万+，星航道为你骄傲！</a>
+		</div>
+	</div>
+	@@include('common/showFooter.html') @@include('common/footer.html')
+	<script>
+		var swiper = new Swiper('.xyhj-container', {
+			spaceBetween: 30,
+			centeredSlides: true,
+			loop: true,
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: false,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+		div.show
+
+	</script>
+</body>
+
+</html>

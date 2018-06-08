@@ -1,0 +1,14 @@
+@mixin clear {
+	&:after {
+		content:'.';
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+	zoom:1;
+}
+@mixin width {
+	width: 7.2rem;
+	margin: 0 auto;
+}

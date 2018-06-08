@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<title>首页</title>
+	<script>
+	 (function() { var h = window.document.documentElement, dir = 1, timer, s = function() { h.setAttribute('data-dir', dir); var w = h.getBoundingClientRect().width, f = w / (7.2 * dir); h.style.fontSize = f + 'px'; document.addEventListener('DOMContentLoaded', function() { document.body.style.fontSize = 0.24 + 'rem'; }); var sh = parseFloat(h.style.fontSize), eh = parseFloat(window.getComputedStyle(h).fontSize); if (sh !== eh) h.style.fontSize = sh * (sh / eh) + 'px'; }; window.addEventListener('resize', function() { clearTimeout(timer), timer = setTimeout(s, 300) }, !1), window.addEventListener('pageshow', function(b) { b.persisted && (clearTimeout(time), time = setTimeout(s, 300)) }, !1), s(); })();
+	</script>
+	<link rel="stylesheet" href="../public/css/base.css">
+	<link rel="stylesheet" href="../public/css/style.css">
+	<link rel="stylesheet" href="../public/swiper/css/swiper.min.css">
+	<script src="../public/swiper/js/swiper.min.js"></script>
+	<script src="../public/js/jquery-3.3.1.min.js"></script>
+	
+</head>
+
+<body>
+	@@include('./common/header.html')
+	@@include('./common/banner.html')
+	<!--视频列表-->
+	<div class="certificate">
+		<div class="bt">
+			<p class="left"><a href="#">首页</a><em>&gt;</em><a href="#">视频列表</a></p>
+			<a href="#" class="right">更多+</a>
+		</div>
+		<div class="base-list">
+			@@for(var i =0;i<5;i++){
+			<div class="base-item">
+				<a href="">
+					<div class="img"><img src="../public/images/zw.png" style="width: 2.6rem;height: 2.2rem;"></div>
+					<div class="right">
+						<h2>健身教练国家职业资格证</h2>
+						<div>证书级别：国家级</div>
+						<p>国家职业资格证，是从事健身教练行业必考的门槛证书，是健身教练正规职业身份的象征，由国家体育总局颁发。</p>
+						<a href="#" class="btn">点击了解详情</a>
+					</div>
+
+				</a>
+			</div>
+			}
+			<div class="page">
+				<a href="#">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">下一页</a>
+				<a href="#">尾页</a>
+			</div>
+		</div>
+	</div>
+	@@include('common/showFooter.html')
+	@@include('common/footer.html')
+	<script>
+		var swiper = new Swiper('.xyhj-container', {
+      		spaceBetween: 30,
+      		centeredSlides: true,
+			loop:true,
+      		autoplay: {
+        		delay: 2500,
+        		disableOnInteraction: false,
+      		},
+      		navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+      		},
+    });
+		div.show
+	</script>
+</body>
+</html>

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>联系我们</title>
+        <link rel="stylesheet" href="../public/css/base.css">
+        <link rel="stylesheet" href="../public/css/synopsis.css">
+        <script src="../public/js/jquery-2.2.4.min.js"></script>
+        <script src="../public/js/jquery.SuperSlide.2.1.1.js"></script>
+    </head>
+    <style>
+        @font-face {
+            font-family: "iconfont";
+            src: url('../public/icon/iconfont.eot');
+            /* IE9*/
+            src: url('../public/icon/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../public/icon/iconfont.woff') format('woff'), /* chrome, firefox */
+            url('../public/icon/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+            url('../public/icon/iconfont.svg#iconfont') format('svg');
+            /* iOS 4.1- */
+        }
+
+        .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 16px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- start: header-->
+    <div class="header-wrapper">
+        <div class="header-top">
+            <div class="top-wrapper">
+                <div class="left">中力健身学院·中国唯一实战型健身教练培训学院,国家健身教练职业资格证培训基地</div>
+                <div class="right"><a href="#">常规问题</a><span>|</span><a href="#">网站地图</a></div>
+            </div>
+        </div>
+        <div class="header-midder">
+            <div class="midder-wrapper">
+                <div class="logo">
+                    <img src="./public/images/logo_01.png">
+                    <div>
+                        <h1>中力健身学院</h1>
+                        <p>零基础健身教练培训基地</p>
+                    </div>
+                </div>
+                <div class="list">
+                    <div><i></i>
+                        <p>零元入学<br><span>零首付</span><em>零学费</em></p>
+                    </div>
+                    <div><i></i>
+                        <p>就业保障<br><span>100%就业保障</span></p>
+                    </div>
+                    <div><i></i>
+                        <p>专属营养餐<br><span>营业搭配更合理</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="bottom-wrapper">
+                <div class="bottom-left">
+                    <div class="top">
+                        <p>获取您的专属健身计划</p><i><img src="./public/images/frommune.png" ></i>
+                    </div>
+                    <div class="form-wrapper" style="z-index: 9999">
+                        <div style="overflow: hidden">
+                            <form class="xiao-form">
+                                <div class="user"><span>姓名：</span><input type="text"></div>
+                                <div class="age"><span>性别：</span><input type="text"><span>年龄：</span><input type="text"></div>
+                                <div class="tall"><span>身高：</span><input type="text"><span>体重：</span><input type="text"></div>
+                                <div class="tel"><span>电话：</span><input type="text"></div>
+                                <div class="btn"><button>提交</button></div>
+                            </form>
+                            <div class="xiao-form-left">
+                                <a><img src="./public/images/jt.png"></a>
+                                <a><img src="./public/images/jt.png"></a>
+                                <a><img src="./public/images/jt.png"></a>
+                                <a><img src="./public/images/jt.png"></a>
+                            </div>
+                        </div>
+                        <div class="list-wraper">
+                            <a>
+                                <p>您可能关心以下问题？</p><em><img src="./public/images/jt.png"></em></a>
+                            <a>
+                                <p>如何选择专业学校学习？</p><em><img src="./public/images/jt.png"></em></a>
+                            <a>
+                                <p>学习多久可以正式就业？</p><em><img src="./public/images/jt.png"></em></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-right">
+                    <a href="#" class="on">首页</a>
+                    <a href="#">权威证书</a>
+                    <a href="#">专业课程</a>
+                    <a href="#">师资力量</a>
+                    <a href="#">就业服务</a>
+                    <a href="#">优秀学员</a>
+                    <a href="#">新闻动态</a>
+                    <a href="#">学院简介</a>
+                    <a href="#">证书查询</a>
+                    <a href="#" class="lxwm">联系我们</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner-wrapper">
+        <div class="bd">
+            <ul>
+                <li style="background-image: url('http://www.zhonglifit.cn/img/003.jpg')"><a></a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $('.banner-wrapper').slide({
+            mainCell: ".bd ul",
+            effect: "leftLoop",
+            autoPlay: true
+        });
+        $('.header-wrapper .top').click(function() {
+            $('.header-wrapper .form-wrapper').toggle()
+        })
+    </script>
+
+    <!--end :header-->
+    <!--start:联系我们-->
+    <div class="synopsis">
+        <div class="synopsis-top">
+            <div class="menu">
+                <div class="btn">常见问题 <img src="../public/images/frommune.png">
+                    <ul class="menuShow" style="display: none;">
+                        <li><a href="#">专业知识</a></li>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="">视频教学</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="address">当前的位置：<a href="">星航道</a> &gt; <a href="/">联系我们</a> &gt;</div>
+        </div>
+        <div class="synopsis-bottom">
+            <div class="synopsis-act">
+                <div id="callus">
+                    <h1>联系我们</h1>
+                    <p>联系方式：010-80320881</p>
+                    <p>北京校区：北京市房山区窦店镇北京民族大学（总部）</p>
+                    <div style="margin: 0 auto; width: 680px; height: 400px;margin: 0 auto;"></div>
+                    <p>一、北 京 站</p>
+                    <p>①公交车路线 ：</p>
+                    <p>乘20路公交至天桥站，转乘835快公交（慢车-开往韩村河方向.）---七里店民族大学站下车，路口往南走200米；或乘20路公交至天桥站，转乘835快公交（快 车-开往窦店方向.窦店高速）---北京民族大学站下车即到（正门口）。</p>
+                    <p>②乘地铁路线：</p>
+                    <p>北京站地铁2号线至复兴门站----转1号线至军事博物馆----转9号线至郭公 庄----转房山线至良乡南关地铁站----乘出租车15分钟即到学校正门口</p>
+                    <p>二、北京西站</p>
+                    <p>①公交车路线：</p>
+                    <p>从西站南广场出口南走步行150米左右十字路口（右拐）往西步行至六里桥东公交站（章丘大厦前面） 乘835快公交（慢车-开往韩村河方向）七里店民族大学站下车，路口往南走200米即到；或 乘835快公交（快车-开往窦店方向.窦店高速）---北京民族大学站下车即到</p>
+                    <p>②乘地铁路线：</p>
+                    <p>北京西站地铁9号线至郭公庄站----转房山线至良乡南关地铁站----乘出租车15分钟即到学校正门口</p>
+                    <p>三、北京南站</p>
+                    <p>①公交车路线：</p>
+                    <p>从北京南站出口步行800米，从南站公交站乘坐106公交至北纬路东口站下车----步行130米至天桥汽车站 乘835快公交（慢车-开往韩村河方向）七里店民族大学站下车，路口往南走200米即到；或乘835快公交（快车-开往窦店方向.窦店高速）---北京民族大学站下车即到（正门口）。</p>
+                    <p>②乘地铁路线：</p>
+                    <p>北京南站地铁4号线大兴线至菜市口站----转7号线至北京西站----转9号线至郭公庄站----转房山线至良乡南关地铁站----乘出租车15分钟即到学校正门口（校车接送）</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end:联系我们-->
+    <div class="newFooter">
+        <div class="list">
+            <div class="title"> <i class="icon" style="background-image: url(../public/images/icon-7.png)"></i>推荐阅读
+                <a class="more" href="#">更多+</a>
+            </div>
+            <div class="wrap">
+                <ul class="tjyd">
+                    <li><a href="#">健身教练培训多少钱？</a></li>
+                    <li><a href="#">学员免费提供食宿吗？</a></li>
+                    <li><a href="#">学员毕业后分配就业吗？</a></li>
+                    <li><a href="#">零基础能学健身教练吗？</a></li>
+                    <li><a href="#">健身教练资格证怎么考？</a></li>
+                    <li><a href="#">做健身教练有哪些条件？</a></li>
+                    <li><a href="#">女生做健身教练怎么样？</a></li>
+                    <li><a href="#">退伍军人当健身教练有什么优势？</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="list">
+            <div class="title"> <i class="icon" style="background-image: url(../public/images/icon-8.png)"></i>中国健身教练培训学校地区 <em style="color: #fe7902">直通车</em>
+                <a class="more" href="#">更多+</a>
+            </div>
+            <div class="wrap">
+                <div class="ztc">
+                    <dl>
+                        <dt>华北地区：</dt>
+                        <dd>
+                            <a href="">北京健身教练培训学校</a>
+                            <a href="#">河北健身教练培训学校</a>
+                            <a href="#">山西健身教练培训学校</a>
+                            <a href="#">内蒙古健身教练培训学校</a>
+                            <a href="#">天津健身教练培训学校</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>华南地区：</dt>
+                        <dd>
+                            <a href="#">广东健身教练培训学校</a>
+                            <a href="#">广西健身教练培训学校 </a>
+                            <a href="#">海南健身教练培训学校</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>华东地区：</dt>
+                        <dd>
+                            <a href="#">山东健身教练培训学校</a>
+                            <a href="#">山东健身教练培训学校</a>
+                            <a href="#">江苏健身教练培训学校 </a>
+                            <a href="#">安徽健身教练培训学校</a>
+                            <a href="#">浙江健身教练培训学校</a>
+                            <a href="#">福建健身教练培训学校</a>
+                            <a href="#">江西健身教练培训学校</a>
+                            <a href="#">上海健身教练培训学校</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>华中地区：</dt>
+                        <dd>
+                            <a href="#">河南健身教练培训学校</a>
+                            <a href="#">湖北健身教练培训学校 </a>
+                            <a href="#">湖南健身教练培训学校</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>东北地区：</dt>
+                        <dd>
+                            <a href="#">辽宁健身教练培训学校</a>
+                            <a href="#">吉林健身教练培训学校 </a>
+                            <a href="#">黑龙江健身教练培训学校</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>西北地区：</dt>
+                        <dd>
+                            <a href="#">新疆健身教练培训学校</a>
+                            <a href="#">陕西健身教练培训学校 </a>
+                            <a href="#">宁夏健身教练培训学校</a>
+                            <a href="#">青海健身教练培训学校</a>
+                            <a href="#">甘肃健身教练培训学校</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>西南地区：</dt>
+                        <dd>
+                            <a href="#">云南健身教练培训学校</a>
+                            <a href="#">四川健身教练培训学校 </a>
+                            <a href="#">贵州健身教练培训学校</a>
+                            <a href="#">重庆健身教练培训学校</a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="list">
+            <div class="wrap" style="border: 0;">
+                <ul class="list-item">
+                    <li>
+                        <i style="background-image: url(../public/images/b1.png)"></i>
+                        <div class="info">
+                            <h4>最具性价比：</h4>
+                            <p>超优惠的价格，学最实用的课程，行业内最具性价比的健身学院</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i style="background-image: url(../public/images/b2.png)"></i>
+                        <div class="info">
+                            <h4>最具性价比：</h4>
+                            <p>超优惠的价格，学最实用的课程，行业内最具性价比的健身学院</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i style="background-image: url(../public/images/b3.png)"></i>
+                        <div class="info">
+                            <h4>最具性价比：</h4>
+                            <p>超优惠的价格，学最实用的课程，行业内最具性价比的健身学院</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i style="background-image: url(../public/images/b4.png)"></i>
+                        <div class="info">
+                            <h4>最具性价比：</h4>
+                            <p>超优惠的价格，学最实用的课程，行业内最具性价比的健身学院</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--	start:footer-->
+    <div class="footer-wrapper">
+        <div class="footer-top">
+            <div class="nav">
+                <a href="#" class="on">首页</a>
+                <a href="#">权威证书</a>
+                <a href="#">专业课程</a>
+                <a href="#">师资力量</a>
+                <a href="#">就业服务</a>
+                <a href="#">优秀学员</a>
+                <a href="#">新闻动态</a>
+                <a href="#">学员简介</a>
+                <a href="#">证书查询</a>
+                <a href="#">联系我们</a>
+            </div>
+        </div>
+        <div class="footer-midder">
+            <ul class="list">
+                <li>
+                    <h3>您的需求</h3>
+                    <div class="info">
+                        <a href="/peixunkecheng">实用课程</a>
+                        <a href="/zhengshu">权威证书</a>
+                        <a href="/jiuyefuwu">分配就业</a>
+                        <a href="/xueyuanfengcai">月薪过万</a>
+                    </div>
+                </li>
+                <li>
+                    <h3>我们的优势</h3>
+                    <div class="info">
+                        <a href="#">国家正规</a>
+                        <a href="#">一流口碑</a>
+                        <a href="#">课程实用</a>
+                        <a href="#">证书权威</a>
+                    </div>
+                </li>
+                <li>
+                    <h3>我们的服务</h3>
+                    <div class="info">
+                        <a href="#">0 元入学</a>
+                        <a href="#">分配就业</a>
+                    </div>
+                </li>
+                <li>
+                    <h3>走进星航道</h3>
+                    <div class="info">
+                        <a href="#">校园环境</a>
+                        <a href="#">学院简介</a>
+                    </div>
+                </li>
+                <li class="follow">
+                    <h3>关注我们</h3>
+                    <div class="ewm info2">
+                        <p><img src="http://www.zhonglifit.cn/img/footwx.jpg"> 微信公众号</p>
+                    </div>
+                </li>
+                <li class="telBox">
+                    <h3>学院官方热线</h3>
+                    <ol class="info2 contact">
+                        <li>
+                            <i class="tel" style="background: #444 url(../public/images/tel.png) no-repeat center"></i>
+                            <div class="txt" style="margin: 5px 0 0 10px;">
+                                <p>咨询电话</p>
+                                <p class="big">010-63896399</p>
+                            </div>
+                        </li>
+                        <li class="kf">
+                            <i class="kf" style="background: #444 url(../public/images/kf.png) no-repeat center"></i>
+                            <div class="txt" style="margin: 5px 0 0 10px;">
+                                <p>在线客服</p>
+                                <a href="#" class="btn">点击咨询</a>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+            <div class="addrs">
+                <p><em>地址：</em>北京市房山区民族大学</p>
+                <p><em>邮编：</em>102433</p>
+                <p><em>中力健身学院：</em>www.zhonglifit.cn</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>@All rights reserved Powered by zhonglifit 版权所有：中力文化传播有限公司-冠军私教 中力打造</p>
+        </div>
+    </div>
+
+    <!--	start:end-->
+    <script>
+        $('.synopsis .menu').on({
+            mouseover: function() {
+                $('.synopsis .menuShow').show()
+            },
+            mouseout: function() {
+                $('.synopsis .menuShow').hide()
+            }
+        })
+    </script>
+</body>
+
+</html>

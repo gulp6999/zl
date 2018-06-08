@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<title>首页</title>
+	<script>
+	 (function() { var h = window.document.documentElement, dir = 1, timer, s = function() { h.setAttribute('data-dir', dir); var w = h.getBoundingClientRect().width, f = w / (7.2 * dir); h.style.fontSize = f + 'px'; document.addEventListener('DOMContentLoaded', function() { document.body.style.fontSize = 0.24 + 'rem'; }); var sh = parseFloat(h.style.fontSize), eh = parseFloat(window.getComputedStyle(h).fontSize); if (sh !== eh) h.style.fontSize = sh * (sh / eh) + 'px'; }; window.addEventListener('resize', function() { clearTimeout(timer), timer = setTimeout(s, 300) }, !1), window.addEventListener('pageshow', function(b) { b.persisted && (clearTimeout(time), time = setTimeout(s, 300)) }, !1), s(); })();
+	</script>
+	<link rel="stylesheet" href="../public/css/base.css">
+	<link rel="stylesheet" href="../public/css/index.css">
+	<link rel="stylesheet" href="../public/swiper/css/swiper.min.css">
+	<script src="../public/swiper/js/swiper.min.js"></script>
+	<script src="../public/js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+	@@include('./common/header.html')
+	@@include('./common/banner.html')
+	<!--学员收入-->
+	<div class="income-wrapper">
+		<div class="income-top" style="background-image: url(../public/images/bk.png)">
+			<p>为什么中力健身学院收入高</p>
+			<strong>事实胜于雄辩</strong>
+		</div>
+		<div class="income-list">
+			<ul>
+				@@for(var i =0;i<4;i++){
+				<li>
+					<a href="">
+						<img src="../public/images/zw.png">
+						<div class="name"><span>张大卫</span><strong>月薪12580</strong></div>
+						<div class="addrss"><span>石家庄</span>新威仕南翔会所</div>
+					</a>
+				</li>
+				}			
+			</ul>
+		</div>
+	</div>
+	<!--最新就业情况-->
+	<div class="newWork-wrapper">
+		<div class="newWork-top">
+			<strong>本月最新的就业情况：平均月薪12460.00</strong>
+			<p>数据来自中力健身学院就业部</p>
+		</div>
+		<div class="newWork-list">
+			<ul class="newWork-list-name">
+				<li style="width: 20%;">姓名</li>
+				<li style="width: 15%">学历</li>
+				<li style="width: 30%">就业单位</li>
+				<li style="width: 20%">岗位</li>
+				<li style="width: 15%">薪资</li>
+			</ul>
+			<div class="newWork-list-item newWork-list-item1">
+				@@for(var i = 0;i<10;i++){
+				<ul>
+					<li>姓名</li>
+					<li>学历</li>
+					<li>就业单位</li>
+					<li>岗位</li>
+					<li>薪资</li>
+				</ul>
+				}
+			</div> 	
+		</div>
+	</div>
+	<!--咨询入口-->
+	<div class="consult-wrapper">
+		<div class="consult-top" style="background-image: url(../public/images/bk.png)">
+			<strong>快速咨询入口</strong>
+			<p>自助信息查询</p>
+		</div>
+		<div class="consult-list">
+			<div class="item">
+				<div></div>
+				<span></span>
+				<a href="#">
+					<img src="../public/images/xxtj.png">
+					<p>学习条件</p>
+				</a>
+			</div>
+			<div class="item">
+				<div></div>
+				<span></span>
+				<a href="#">
+					<img src="../public/images/xxsc.png">
+					<p>学习时长</p>	
+				</a>
+			</div>
+			<div class="item">
+				<span></span>
+				<a href="#">
+					<img src="../public/images/xxfy.png">
+					<p>学习费用</p>	
+				</a>	
+			</div>
+			<div class="item">
+				<div></div>
+				
+				<a href="">
+					<img src="../public/images/xxnr.png" alt="">
+					<p>学习内容</p>
+				</a>
+			</div>
+			<div class="item">
+				<div></div>
+				<a href="">
+					<img src="../public/images/qwzs.png" alt="">
+					<p>权威证书</p>
+				</a>
+			</div>
+			<div class="item">
+				<a href="">
+					<img src="../public/images/qtzx.png" alt="">
+					<p>其他咨询</p>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!--常见问题-->
+	<div class="issue-wrapper">
+		<div class="issue-top"  style="background-image: url(../public/images/bk.png)">
+			<strong>常见问题快速解决</strong>
+			<p>自助信息查询</p>
+		</div>
+		<div class="issue-list">
+			@@for(var i =0;i<5;i++){
+			<div class="item"><a href="#"><span>零基础可以学健身教练吗？</span><em>名师解答</em><i></i></a></div>
+			}
+		</div>
+		<div class="index-btn">
+			<a href="#">更多问题在线解答</a>
+		</div>
+	</div>
+	<!---->
+	<div class="index-images">
+		<img src="../public/images/zs.png">
+	</div>
+	<!--权威证书-->
+	<div class="qwzs-wrapper">
+		<div class="qwzs-top" style="background-image: url(../public/images/bk.png)">
+			<strong>权威证书</strong>
+			<strong>为高新就业保驾护航</strong>
+		</div>
+		<ul class="qwzs-list">
+			@@for(var i =0;i<8;i++){
+			<li><a href="#"><img src="../public/images/zw.png"></a></li>
+			}
+		</ul>
+		<div class="index-btn">
+			<a href="#">更多问题在线解答</a>
+		</div>
+	</div>
+	<!--常见问题-->
+	<div class="issue-wrapper">
+		<div class="issue-top"  style="background-image: url(../public/images/bk.png)">
+			<strong>常见问题快速解决</strong>
+			<p>自助信息查询</p>
+		</div>
+		<div class="issue-list">
+			@@for(var i =0;i<5;i++){
+			<div class="item"><a href="#" class="index-red"><span>零基础可以学健身教练吗？</span><em>名师解答</em><i></i></a></div>
+			}
+		</div>
+		<div class="index-btn">
+			<a href="#">更多问题在线解答</a>
+		</div>
+	</div>
+	<div class="index-images">
+		<img src="../public/images/zs1.png">
+	</div>
+	<!--推荐课程-->
+	<div class="course-wrapper">
+		<div class="course-top" style="background-image: url(../public/images/bk.png)">
+			<strong>中力健身学院</strong>
+			<strong>优势课程推荐</strong>
+		</div>
+		<ul class="course-list">
+			@@for(var i =0;i<6;i++){
+			<li><a href="#"><img src="../public/images/zw.png"></a></li>
+			}
+		</ul>
+		<div class="index-btn">
+			<a href="#">更多问题在线解答</a>
+		</div>
+	</div>
+	<div class=" issue-item3">
+		<div class="issue-top"  style="background-image: url(../public/images/bk1.png)">
+			<strong>只学最实用的</strong>
+		</div>
+		<div class="issue-list">
+			@@for(var i =0;i<5;i++){
+			<div class="item"><a href="#"><span>零基础可以学健身教练吗？</span><em>名师解答</em><i></i></a></div>
+			}
+		</div>
+		<div class="index-btn">
+			<a href="#">更多问题在线解答</a>
+		</div>
+	</div>
+	<!--院长寄语-->
+	<div class="yzjx-wrapper">
+		<div class="yzjx-left">
+			<img src="../public/images/zw.png">
+		</div>
+		<div class="yzjx-right">
+			<h2>院长寄语</h2>
+			<p>更多问题在线咨询更多问题在线咨询更多问题在线咨询更多问题在线咨询更多问题在线咨询更多问题在线咨询更多问题在线咨询</p>
+			<div ><em></em>更多问题在线咨询</div>
+		</div>
+	</div>
+<!--学院介绍-->
+	<div class="xyjs-wrapper">
+		<div class="course-top" style="background-image: url(../public/images/bk.png)">
+			<strong>中力健身学院</strong>
+			<strong>零基础健身教练培训基地</strong>
+		</div>
+		<p class="xyjs-list">
+			中力健身学院-中国零基础健身教练培训基地，国家健身教练职业资格证培训基地，退伍军人培训基地，十年行业经验，培养综合能力更加出色的私人健身教练学院。自成立以来，学院不断的为健身行业输出人才，为中国的健身事业添砖加瓦。从20
+			中力健身学院-中国零基础健身教练培训基地，国家健身教练职业资格证培训基地，退伍军人培训基地，十年行业经验，培养综合能力更加出色的私人健身教练学院。自成立以来，学院不断的为健身行业输出人才，为中国的健身事业添砖加瓦。从20
+		</p>
+	</div>
+	<div class="index-images">
+		<img src="../public/images/zs2.png">
+	</div>
+	<!--学院环境-->
+	<div class="xyhj-wrapper">
+		<h2>学院环境</h2>
+		<div class="xyhj-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="../public/images/zw.png"></div>
+				<div class="swiper-slide"><img src="../public/images/zw.png"></div>
+			</div>
+			<!-- Add Arrows -->
+			<div class="swiper-button-next" style="background-image: url(../public/images/next.png)"></div>
+			<div class="swiper-button-prev" style="background-image: url(../public/images/prev.png)"></div>
+		</div>
+	</div>
+	<div class="xyhj-wrapper">
+		<h2>精彩课堂</h2>
+		<div class="xyhj-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="../public/images/zw.png"></div>
+				<div class="swiper-slide"><img src="../public/images/zw.png"></div>
+			</div>
+			<!-- Add Arrows -->
+			<div class="swiper-button-next" style="background-image: url(../public/images/next.png)"></div>
+			<div class="swiper-button-prev" style="background-image: url(../public/images/prev.png)"></div>
+		</div>
+	</div>
+	<div class="newJs-wrapper">
+		<div class="newJs-top" style="background-image: url(../public/images/bk3.png)">
+			<strong>为什么我们的学院</strong>
+			<strong>跟受企业欢迎</strong>
+			<p>硬功夫就是真实力</p>
+		</div>
+		<div class="newJs-list">
+			<h2>【证书更权威】</h2>
+			<p>权威证书助力高新就业</p>
+			<p>轻松博得会员认可和信任</p>
+			<h2>【课程更实用】</h2>
+			<p>独家研发“为实用而生”的课程</p>
+			<p>使学员轻松掌握专业知识技能</p>
+			<h2>【学员实力更强】</h2>
+			<p>明星导师全天实战教学</p>
+			<p>每位学员都有一对一指导的机会</p>
+		</div>
+	</div>
+	<!--合作单位-->
+	<div class="hzdw-wrapper">
+		<div class="issue-top"  style="background-image: url(../public/images/bk.png)">
+			<strong>大家还关注这些问题</strong>
+			<p>我们在线解答</p>
+		</div>
+		<div class="hzdw-list">
+			<ul>
+				@@for(var i =0;i<15;i++){
+				<li><img src="../public/images/zw.png"></li>
+				}
+			</ul>
+		</div>
+		<div class="hzdw-js">
+			<p>选择中力健身学员</p>
+			<p>给自己一个高新，高逼格的未来</p>
+			<div class="jt"><img src="../public/images/jt1.png" ></div>
+			<div class="index-btn">
+				<a href="#">更多问题在线解答</a>
+			</div>
+		</div>
+	</div>
+	<!--常见问题-->
+	<div class="issue-wrapper">
+		<div class="issue-top"  style="background-image: url(../public/images/bk.png)">
+			<strong>大家还关注这些问题</strong>
+			<p>我们在线解答</p>
+		</div>
+		<div class="issue-list">
+			@@for(var i =0;i<5;i++){
+			<div class="item"><a href="#"><span>零基础可以学健身教练吗？</span><em>名师解答</em><i></i></a></div>
+			}
+		</div>
+		<div class="index-btn">
+			<a href="#">更多问题在线解答</a>
+		</div>
+	</div>
+	@@include('common/footer.html')
+	<script>
+		$('.newWork-wrapper .newWork-list .newWork-list-item ul').each(function(index){
+			if(index%2==0){
+				$(this).css({
+					'background':'#fff',
+					'color':'#000'})
+			}
+			$(this).find('li').eq(0).css({'width':'20%'})
+			$(this).find('li').eq(1).css({'width':'15%'})
+			$(this).find('li').eq(2).css({'width':'30%'})
+			$(this).find('li').eq(3).css({'width':'20%'})
+			$(this).find('li').eq(4).css({'width':'15%'})
+		});
+		function newWorkTop (){
+			var item = $('.newWork-wrapper .newWork-list .newWork-list-item');
+			var top = 1;
+			item.append(item.find('ul').clone());
+			var sldieTop = function(){
+				top +=1;
+				if(top ==Math.ceil(item.height())){
+					top = 0;
+				};
+				item.scrollTop(top)
+			}	
+			var timer = setInterval(sldieTop,20);
+			item.on('touchstart',function(){
+				clearInterval(timer)
+			})
+			item.on('touchend',function(){
+				clearInterval(timer);
+				timer = setInterval(sldieTop,20);
+			})
+		}
+		newWorkTop()
+		var swiper = new Swiper('.xyhj-container', {
+      		spaceBetween: 30,
+      		centeredSlides: true,
+			loop:true,
+      		autoplay: {
+        		delay: 2500,
+        		disableOnInteraction: false,
+      		},
+      		navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+      		},
+    });
+	</script>
+</body>
+</html>

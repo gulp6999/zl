@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>内页</title>
+		<link rel="stylesheet" href="../public/css/base.css">
+		<link rel="stylesheet" href="../public/css/synopsis.css">
+		<script src="../public/js/jquery-2.2.4.min.js"></script>
+		<script src="../public/js/jquery.SuperSlide.2.1.1.js"></script>
+	</head>
+	<style>
+		@font-face {
+			font-family: "iconfont";
+			src: url('../public/icon/iconfont.eot');
+			/* IE9*/
+			src: url('../public/icon/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('../public/icon/iconfont.woff') format('woff'), /* chrome, firefox */
+			url('../public/icon/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+			url('../public/icon/iconfont.svg#iconfont') format('svg');
+			/* iOS 4.1- */
+		}
+
+		.iconfont {
+			font-family: "iconfont" !important;
+			font-size: 16px;
+			font-style: normal;
+			-webkit-font-smoothing: antialiased;
+			-webkit-text-stroke-width: 0.2px;
+			-moz-osx-font-smoothing: grayscale;
+		}
+
+	</style>
+</head>
+
+<body>
+	<!-- start: header-->
+	@@include('./common/header.html')
+	<!--end :header-->
+	<!--start:show-->
+	<div class="synopsis">
+		<div class="synopsis-top">
+			<div class="menu">
+				<div class="btn">常见问题
+					<img src="../public/images/frommune.png">
+					<ul class="menuShow" style="display: none;">
+						<li><a href="#">专业知识</a></li>
+						<li><a href="#">常见问题</a></li>
+						<li><a href="">视频教学</a></li>
+					</ul>
+				</div>
+			</div>
+
+
+			<div class="address">当前的位置：<a href="">星航道</a> &gt; <a href="/">内页</a> &gt;</div>
+		</div>
+		<div class="synopsis-bt">
+			<h1>高级全能私教实战班</h1>
+			<p><span>日期：2018-05-15 </span> <span>来源：星航道健身学院</span> <span class="c-brown"> 阅读：184</span></p>
+		</div>
+		<div class="synopsis-bottom">
+			<div class="synopsis-act">
+			</div>
+		</div>
+		<div class="showPage">
+			<div class="top">
+				上一篇：<a href="#">星航道健身学院学员肖雅琪</a>
+				<a href="#" class="btn">返回列表</a>
+			</div>
+			<div class="bottom">
+				下一篇：<a href="#">星航道学员刘金亮 就业视频回访</a>
+				<a href="#" class="btn">点击咨询</a>
+			</div>
+		</div>
+	</div>
+	<!--end:show-->
+	@@include('./common/newFooter.html')
+	<!--	start:footer-->
+	@@include('./common/footer.html')
+	<!--	start:end-->
+	<script>
+		$('.synopsis .menu').on({
+			mouseover: function() {
+				$('.synopsis .menuShow').show()
+			},
+			mouseout: function() {
+				$('.synopsis .menuShow').hide()
+			}
+		})
+
+	</script>
+</body>
+
+</html>

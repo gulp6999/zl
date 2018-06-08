@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>证书查询</title>
+        <link rel="stylesheet" href="../public/css/base.css">
+        <link rel="stylesheet" href="../public/css/certificate.css">
+        <script src="../public/js/jquery-2.2.4.min.js"></script>
+        <script src="../public/js/jquery.SuperSlide.2.1.1.js"></script>
+    </head>
+    <style>
+        @font-face {
+            font-family: "iconfont";
+            src: url('../public/icon/iconfont.eot');
+            /* IE9*/
+            src: url('../public/icon/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../public/icon/iconfont.woff') format('woff'), /* chrome, firefox */
+            url('../public/icon/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+            url('../public/icon/iconfont.svg#iconfont') format('svg');
+            /* iOS 4.1- */
+        }
+
+        .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 16px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- start: header-->
+    <div class="header-wrapper">
+        <div class="header-top">
+            <div class="top-wrapper">
+                <div class="left">中力健身学院·中国唯一实战型健身教练培训学院,国家健身教练职业资格证培训基地</div>
+                <div class="right"><a href="#">常规问题</a><span>|</span><a href="#">网站地图</a></div>
+            </div>
+        </div>
+        <div class="header-midder">
+            <div class="midder-wrapper">
+                <div class="logo">
+                    <img src="./public/images/logo_01.png">
+                    <div>
+                        <h1>中力健身学院</h1>
+                        <p>零基础健身教练培训基地</p>
+                    </div>
+                </div>
+                <div class="list">
+                    <div><i></i>
+                        <p>零元入学<br><span>零首付</span><em>零学费</em></p>
+                    </div>
+                    <div><i></i>
+                        <p>就业保障<br><span>100%就业保障</span></p>
+                    </div>
+                    <div><i></i>
+                        <p>专属营养餐<br><span>营业搭配更合理</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="bottom-wrapper">
+                <div class="bottom-left">
+                    <div class="top">
+                        <p>获取您的专属健身计划</p><i><img src="./public/images/frommune.png" ></i>
+                    </div>
+                    <div class="form-wrapper" style="z-index: 9999">
+                        <div style="overflow: hidden">
+                            <form class="xiao-form">
+                                <div class="user"><span>姓名：</span><input type="text"></div>
+                                <div class="age"><span>性别：</span><input type="text"><span>年龄：</span><input type="text"></div>
+                                <div class="tall"><span>身高：</span><input type="text"><span>体重：</span><input type="text"></div>
+                                <div class="tel"><span>电话：</span><input type="text"></div>
+                                <div class="btn"><button>提交</button></div>
+                            </form>
+                            <div class="xiao-form-left">
+                                <a><img src="./public/images/jt.png"></a>
+                                <a><img src="./public/images/jt.png"></a>
+                                <a><img src="./public/images/jt.png"></a>
+                                <a><img src="./public/images/jt.png"></a>
+                            </div>
+                        </div>
+                        <div class="list-wraper">
+                            <a>
+                                <p>您可能关心以下问题？</p><em><img src="./public/images/jt.png"></em></a>
+                            <a>
+                                <p>如何选择专业学校学习？</p><em><img src="./public/images/jt.png"></em></a>
+                            <a>
+                                <p>学习多久可以正式就业？</p><em><img src="./public/images/jt.png"></em></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-right">
+                    <a href="#" class="on">首页</a>
+                    <a href="#">权威证书</a>
+                    <a href="#">专业课程</a>
+                    <a href="#">师资力量</a>
+                    <a href="#">就业服务</a>
+                    <a href="#">优秀学员</a>
+                    <a href="#">新闻动态</a>
+                    <a href="#">学院简介</a>
+                    <a href="#">证书查询</a>
+                    <a href="#" class="lxwm">联系我们</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner-wrapper">
+        <div class="bd">
+            <ul>
+                <li style="background-image: url('http://www.zhonglifit.cn/img/003.jpg')"><a></a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $('.banner-wrapper').slide({
+            mainCell: ".bd ul",
+            effect: "leftLoop",
+            autoPlay: true
+        });
+        $('.header-wrapper .top').click(function() {
+            $('.header-wrapper .form-wrapper').toggle()
+        })
+    </script>
+
+    <!--end :header-->
+    <!--start:证书查询-->
+    <div class="certificate-wrapper">
+        <div class="addrss-nav">当前位置：<a href="#">星航道</a> &gt; <a href="#">证书查询</a> &gt; </div>
+        <div class="certificate">
+            <div class="cx-wrap">
+                <div class="left"><a href="#" class="on">报名信息查询</a></div>
+                <div class="right"><a href="#">证书信息查询</a></div>
+            </div>
+            <div class="form">
+                <form action="">
+                    <!--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-->
+                    <div class="user"><span>姓名：</span><input type="text"><em>*</em></div>
+                    <div class="numder"><span>身份证号：</span><input type="text"><em>*</em></div>
+                    <div class="tel"><span>电话：</span><input type="text"><em>*</em></div>
+                    <div class="yzm"><span>验证码：</span><input type="text">
+                        <div></div><a href="javascript:refreshVerify1()">点击刷新</a></div>
+                    <div class="btn"><button type="button" class="l find" onclick="FindClick()">查询</button ><button type="button" class="r reset" onclick="resetClick()">重置</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--end:证书查询-->
+    <!--	start:footer-->
+    <div class="footer-wrapper">
+        <div class="footer-top">
+            <div class="nav">
+                <a href="#" class="on">首页</a>
+                <a href="#">权威证书</a>
+                <a href="#">专业课程</a>
+                <a href="#">师资力量</a>
+                <a href="#">就业服务</a>
+                <a href="#">优秀学员</a>
+                <a href="#">新闻动态</a>
+                <a href="#">学员简介</a>
+                <a href="#">证书查询</a>
+                <a href="#">联系我们</a>
+            </div>
+        </div>
+        <div class="footer-midder">
+            <ul class="list">
+                <li>
+                    <h3>您的需求</h3>
+                    <div class="info">
+                        <a href="/peixunkecheng">实用课程</a>
+                        <a href="/zhengshu">权威证书</a>
+                        <a href="/jiuyefuwu">分配就业</a>
+                        <a href="/xueyuanfengcai">月薪过万</a>
+                    </div>
+                </li>
+                <li>
+                    <h3>我们的优势</h3>
+                    <div class="info">
+                        <a href="#">国家正规</a>
+                        <a href="#">一流口碑</a>
+                        <a href="#">课程实用</a>
+                        <a href="#">证书权威</a>
+                    </div>
+                </li>
+                <li>
+                    <h3>我们的服务</h3>
+                    <div class="info">
+                        <a href="#">0 元入学</a>
+                        <a href="#">分配就业</a>
+                    </div>
+                </li>
+                <li>
+                    <h3>走进星航道</h3>
+                    <div class="info">
+                        <a href="#">校园环境</a>
+                        <a href="#">学院简介</a>
+                    </div>
+                </li>
+                <li class="follow">
+                    <h3>关注我们</h3>
+                    <div class="ewm info2">
+                        <p><img src="http://www.zhonglifit.cn/img/footwx.jpg"> 微信公众号</p>
+                    </div>
+                </li>
+                <li class="telBox">
+                    <h3>学院官方热线</h3>
+                    <ol class="info2 contact">
+                        <li>
+                            <i class="tel" style="background: #444 url(../public/images/tel.png) no-repeat center"></i>
+                            <div class="txt" style="margin: 5px 0 0 10px;">
+                                <p>咨询电话</p>
+                                <p class="big">010-63896399</p>
+                            </div>
+                        </li>
+                        <li class="kf">
+                            <i class="kf" style="background: #444 url(../public/images/kf.png) no-repeat center"></i>
+                            <div class="txt" style="margin: 5px 0 0 10px;">
+                                <p>在线客服</p>
+                                <a href="#" class="btn">点击咨询</a>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+            <div class="addrs">
+                <p><em>地址：</em>北京市房山区民族大学</p>
+                <p><em>邮编：</em>102433</p>
+                <p><em>中力健身学院：</em>www.zhonglifit.cn</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>@All rights reserved Powered by zhonglifit 版权所有：中力文化传播有限公司-冠军私教 中力打造</p>
+        </div>
+    </div>
+
+    <!--	start:end-->
+    <script>
+        function FindClick() {
+            var isBtn = true;
+            if ($('.certificate .user input').val() == '') {
+                $('.user input').addClass('on').attr('placeholder', '请您输入姓名');
+                isBtn = false;
+            }
+            var regIdNo = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;
+            if (!regIdNo.test($('.certificate .numder input').val())) {
+                $('.certificate .numder input').addClass('on').attr('placeholder', '身份证号有误').val('');
+                isBtn = false;
+            }
+            var filter = /^1[3|4|5|7|8][0-9]\d{8}$/;
+            if (!filter.test($('.certificate .tel input').val())) {
+                $('.certificate .tel input').addClass('on').attr('placeholder', '您输入的电话格式不对');
+                isBtn = false;
+            }
+            if ($('.certificate .yzm input').val() == '') {
+                $('.yzm input').addClass('on').attr('placeholder', '请您输入验证码');
+                isBtn = false;
+            }
+            //			console.log(isBtn)
+        }
+        //重置
+        function resetClick() {
+            $(".certificate input").attr('placeholder', '').val('').removeClass('on');
+        }
+        $(".certificate input").focus(function() {
+            $(this).removeClass('on').attr('placeholder', '');
+        })
+    </script>
+</body>
+
+</html>

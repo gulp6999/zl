@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>首页</title>
+    <script>
+        (function() {
+            var h = window.document.documentElement,
+                dir = 1,
+                timer, s = function() {
+                    h.setAttribute('data-dir', dir);
+                    var w = h.getBoundingClientRect().width,
+                        f = w / (7.2 * dir);
+                    h.style.fontSize = f + 'px';
+                    document.addEventListener('DOMContentLoaded', function() {
+                        document.body.style.fontSize = 0.24 + 'rem';
+                    });
+                    var sh = parseFloat(h.style.fontSize),
+                        eh = parseFloat(window.getComputedStyle(h).fontSize);
+                    if (sh !== eh) h.style.fontSize = sh * (sh / eh) + 'px';
+                };
+            window.addEventListener('resize', function() {
+                clearTimeout(timer), timer = setTimeout(s, 300)
+            }, !1), window.addEventListener('pageshow', function(b) {
+                b.persisted && (clearTimeout(time), time = setTimeout(s, 300))
+            }, !1), s();
+        })();
+    </script>
+    <link rel="stylesheet" href="../public/css/base.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="../public/swiper/css/swiper.min.css">
+    <script src="../public/swiper/js/swiper.min.js"></script>
+    <script src="../public/js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="logo"><img src="../public/images/loao.png"></div>
+            <div class="name">
+                <img src="../public/images/name.png">
+
+            </div>
+            <div class="tel">
+                <img src="../public/images/toptel.png">
+            </div>
+        </div>
+        <div class="header-nav">
+            <a href="#">首页</a>
+            <a href="#">课程</a>
+            <a href="#">证书</a>
+            <a href="#">就业</a>
+            <a href="#">师资</a>
+            <a href="#">动态</a>
+        </div>
+    </header>
+
+    <div class="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../public/images/banner1.png"></div>
+                <div class="swiper-slide">2</div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <script>
+        var swiper = new Swiper('.banner .swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            loop: true,
+            autoplay: true,
+        })
+    </script>
+
+    <!--视频列表-->
+    <div class="newBase">
+        <div class="bt">
+            <p class="left"><a href="#">首页</a><em>&gt;</em><a href="#">视频列表</a></p>
+            <a href="#" class="right">更多+</a>
+        </div>
+        <div class="base-list">
+
+            <div class="base-item">
+                <a href="">
+                    <div class="img"><img src="../public/images/zw.png" alt=""></div>
+                    <p class="p1">视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频</p>
+                    <p class="p2">【详情】</p>
+                    <p class="p3">2018-06-02</p>
+                </a>
+            </div>
+
+            <div class="base-item">
+                <a href="">
+                    <div class="img"><img src="../public/images/zw.png" alt=""></div>
+                    <p class="p1">视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频</p>
+                    <p class="p2">【详情】</p>
+                    <p class="p3">2018-06-02</p>
+                </a>
+            </div>
+
+            <div class="base-item">
+                <a href="">
+                    <div class="img"><img src="../public/images/zw.png" alt=""></div>
+                    <p class="p1">视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频</p>
+                    <p class="p2">【详情】</p>
+                    <p class="p3">2018-06-02</p>
+                </a>
+            </div>
+
+            <div class="base-item">
+                <a href="">
+                    <div class="img"><img src="../public/images/zw.png" alt=""></div>
+                    <p class="p1">视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频</p>
+                    <p class="p2">【详情】</p>
+                    <p class="p3">2018-06-02</p>
+                </a>
+            </div>
+
+            <div class="base-item">
+                <a href="">
+                    <div class="img"><img src="../public/images/zw.png" alt=""></div>
+                    <p class="p1">视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频视频</p>
+                    <p class="p2">【详情】</p>
+                    <p class="p3">2018-06-02</p>
+                </a>
+            </div>
+
+            <div class="page">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">下一页</a>
+                <a href="#">尾页</a>
+            </div>
+        </div>
+    </div>
+    <div class="showFooter">
+        <div class="sptj-wrapper">
+            <div class="bt">
+                <h3>视频推荐</h3><a href="#">更多+</a></div>
+            <div class="sptj-list">
+                <ul>
+                    <li><img src="../public/images/zw.png" alt=""></li>
+                    <li><img src="../public/images/zw.png" alt=""></li>
+                    <li><img src="../public/images/zw.png" alt=""></li>
+                    <li><img src="../public/images/zw.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sptj-wrapper">
+            <div class="bt">
+                <h3>就业薪资榜</h3><a href="#">更多+</a></div>
+            <div class="jiuye-list">
+                <ul class="newWork-list-name">
+                    <li style="width: 20%;">姓名</li>
+                    <li style="width: 15%">学历</li>
+                    <li style="width: 30%">就业单位</li>
+                    <li style="width: 20%">岗位</li>
+                    <li style="width: 15%">薪资</li>
+                </ul>
+                <div class="newWork-list-item newWork-list-item1">
+                    <ul>
+                        <li>姓名</li>
+                        <li>学历</li>
+                        <li>就业单位</li>
+                        <li>岗位</li>
+                        <li>薪资</li>
+                    </ul>
+                    <ul>
+                        <li>姓名</li>
+                        <li>学历</li>
+                        <li>就业单位</li>
+                        <li>岗位</li>
+                        <li>薪资</li>
+                    </ul>
+                    <ul>
+                        <li>姓名</li>
+                        <li>学历</li>
+                        <li>就业单位</li>
+                        <li>岗位</li>
+                        <li>薪资</li>
+                    </ul>
+                    <ul>
+                        <li>姓名</li>
+                        <li>学历</li>
+                        <li>就业单位</li>
+                        <li>岗位</li>
+                        <li>薪资</li>
+                    </ul>
+                    <ul>
+                        <li>姓名</li>
+                        <li>学历</li>
+                        <li>就业单位</li>
+                        <li>岗位</li>
+                        <li>薪资</li>
+                    </ul>
+                    <ul>
+                        <li>姓名</li>
+                        <li>学历</li>
+                        <li>就业单位</li>
+                        <li>岗位</li>
+                        <li>薪资</li>
+                    </ul>
+                    <ul>
+                        <li>姓名</li>
+                        <li>学历</li>
+                        <li>就业单位</li>
+                        <li>岗位</li>
+                        <li>薪资</li>
+                    </ul>
+                    <ul>
+                        <li>姓名</li>
+                        <li>学历</li>
+                        <li>就业单位</li>
+                        <li>岗位</li>
+                        <li>薪资</li>
+                    </ul>
+                    <ul>
+                        <li>姓名</li>
+                        <li>学历</li>
+                        <li>就业单位</li>
+                        <li>岗位</li>
+                        <li>薪资</li>
+                    </ul>
+                    <ul>
+                        <li>姓名</li>
+                        <li>学历</li>
+                        <li>就业单位</li>
+                        <li>岗位</li>
+                        <li>薪资</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="sptj-wrapper">
+            <div class="bt">
+                <h3>就业薪资榜</h3><a href="#">更多+</a></div>
+            <div class="shili-list">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../../public/images/zw.png"></div>
+                        <div class="swiper-slide"><img src="../../public/images/zw.png"></div>
+                        <div class="swiper-slide"><img src="../../public/images/zw.png"></div>
+                    </div>
+                </div>
+                <div class="btn"><a href="#">点击查看跟多</a></div>
+            </div>
+        </div>
+        <div class="sptj-wrapper">
+            <div class="bt">
+                <h3>助力起航</h3><a href="#">更多+</a></div>
+            <div class="zhuli-list">
+                <div class="left">
+                    <h2>《健身教练实战密码》</h2>
+                    <p>年薪30万健身教练必备读物</p>
+                    <div></div>
+                    <h3>星航道独家出版</h3>
+                    <a href="">免费领取</a>
+                </div>
+                <div class="right"><img src="../public/images/zw.png"></div>
+            </div>
+        </div>
+        <div class="sptj-wrapper">
+            <div class="tab-list">
+                <div class="tab-bt">
+                    <span class="on">开课动态</span><em>|</em>
+                    <span>常见问题</span><em>|</em>
+                    <span>新闻动态</span>
+                </div>
+
+                <div class="tab-item">
+                    <div class="img"><img src="../public/images/zw.png" alt=""></div>
+                    <div class="list">
+                        <p><a href="#">1805期全能私教实战班开课</a><span>05-01</span></p>
+                        <p><a href="#">1805期全能私教实战班开课</a><span>05-01</span></p>
+                        <p><a href="#">1805期全能私教实战班开课</a><span>05-01</span></p>
+                        <p><a href="#">1805期全能私教实战班开课</a><span>05-01</span></p>
+                        <p><a href="#">1805期全能私教实战班开课</a><span>05-01</span></p>
+                    </div>
+                </div>
+
+                <div class="tab-item">
+                    <div class="img"><img src="../public/images/zw.png" alt=""></div>
+                    <div class="list">
+                        <p><a href="#">1805期全能私教实战班开课</a><span>05-01</span></p>
+                        <p><a href="#">1805期全能私教实战班开课</a><span>05-01</span></p>
+                        <p><a href="#">1805期全能私教实战班开课</a><span>05-01</span></p>
+                        <p><a href="#">1805期全能私教实战班开课</a><span>05-01</span></p>
+                        <p><a href="#">1805期全能私教实战班开课</a><span>05-01</span></p>
+                    </div>
+                </div>
+
+                <div class="tab-item">
+                    <div class="img"><img src="../public/images/zw.png" alt=""></div>
+                    <div class="list">
+                        <p><a href="#">1805期全能私教实战班开课</a><span>05-01</span></p>
+                        <p><a href="#">1805期全能私教实战班开课</a><span>05-01</span></p>
+                        <p><a href="#">1805期全能私教实战班开课</a><span>05-01</span></p>
+                        <p><a href="#">1805期全能私教实战班开课</a><span>05-01</span></p>
+                        <p><a href="#">1805期全能私教实战班开课</a><span>05-01</span></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.showFooter .sptj-wrapper .tab-list .tab-bt span ').each(function(index) {
+            var list = $('.showFooter .sptj-wrapper .tab-list .tab-item');
+            list.eq(0).show();
+            $(this).click(function() {
+                list.hide()
+                $('.showFooter .sptj-wrapper .tab-list .tab-bt span').removeClass('on');
+                $(this).addClass('on');
+                list.eq(index).show();
+
+            });
+        });
+        $('.showFooter .sptj-wrapper .newWork-list-item ul').each(function(index) {
+            if (index % 2 == 0) {
+                $(this).css({
+                    'background': '#fff',
+                    'color': '#000'
+                })
+            };
+            $(this).find('li').eq(0).css({
+                'width': '20%'
+            })
+            $(this).find('li').eq(1).css({
+                'width': '15%'
+            })
+            $(this).find('li').eq(2).css({
+                'width': '30%'
+            })
+            $(this).find('li').eq(3).css({
+                'width': '20%'
+            })
+            $(this).find('li').eq(4).css({
+                'width': '15%'
+            })
+        });
+
+        function newWorkTop() {
+            var item = $('.showFooter .sptj-wrapper .newWork-list-item');
+            var top = 1;
+            item.append(item.find('ul').clone());
+            var sldieTop = function() {
+                top += 1;
+                if (top == Math.ceil(item.height())) {
+                    top = 0;
+                };
+                item.scrollTop(top)
+            }
+            var timer = setInterval(sldieTop, 20);
+            item.on('touchstart', function() {
+                clearInterval(timer)
+            })
+            item.on('touchend', function() {
+                clearInterval(timer);
+                timer = setInterval(sldieTop, 20);
+            })
+        }
+        newWorkTop();
+        var swiper = new Swiper('.showFooter .shili-list  .swiper-container', {
+            slidesPerView: 2,
+            spaceBetween: 50,
+            centeredSlides: true,
+            centeredSlides: true,
+            loop: true,
+            autoplay: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+
+    <footer class="footer">
+        <h2><em>官方热线</em><span>010-80320881</span></h2>
+        <p class="item1"><a href="#">关于我们</a>|<a href="#">联系我们</a></p>
+        <p class="item2">中力健身学院地址</p>
+        <p class="item2">北京市房山区北京民族大学</p>
+    </footer>
+    <div class="footer-fixed">
+        <div class="fiexd-wrapper">
+            <a href="#"><img src="../../public/images/zxkc1.png" ><span>咨询课程</span></a>
+            <a href="#"><img src="../../public/images/zxxf1.png" ><span>咨询学费</span></a>
+            <a href="#"><img src="../../public/images/zxzs.png" ><span>咨询证书</span></a>
+        </div>
+    </div>
+    <script>
+        var swiper = new Swiper('.xyhj-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        div.show
+    </script>
+</body>
+
+</html>

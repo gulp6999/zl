@@ -1,0 +1,41 @@
+@import 'common/style.scss';
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	color: #000;
+	background: #fff;
+	overflow-y: scroll;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%
+}
+i,em{
+	font-style: normal;
+}
+img{
+	display: block;
+	border: 0;
+	border-style: none;
+}
+body {
+	position: static;
+	font-family: Helvetica Neue, Tahoma, Arial, PingFangSC-Regular, Hiragino Sans GB, Microsoft Yahei, sans-serif;
+	user-select: none;
+	touch-action: manipulation;
+	text-size-adjust: none;
+	padding-bottom: 1.1rem;
+}
+a {
+	text-align: center;
+	font-size: 0.24rem;
+	color: #000;
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+@import 'common/header.scss';
+@import 'common/banner.scss';
+@import 'common/footer.scss';

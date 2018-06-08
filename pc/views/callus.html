@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>联系我们</title>
+		<link rel="stylesheet" href="../public/css/base.css">
+		<link rel="stylesheet" href="../public/css/synopsis.css">
+		<script src="../public/js/jquery-2.2.4.min.js"></script>
+		<script src="../public/js/jquery.SuperSlide.2.1.1.js"></script>
+	</head>
+	<style>
+		@font-face {
+			font-family: "iconfont";
+			src: url('../public/icon/iconfont.eot');
+			/* IE9*/
+			src: url('../public/icon/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('../public/icon/iconfont.woff') format('woff'), /* chrome, firefox */
+			url('../public/icon/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+			url('../public/icon/iconfont.svg#iconfont') format('svg');
+			/* iOS 4.1- */
+		}
+
+		.iconfont {
+			font-family: "iconfont" !important;
+			font-size: 16px;
+			font-style: normal;
+			-webkit-font-smoothing: antialiased;
+			-webkit-text-stroke-width: 0.2px;
+			-moz-osx-font-smoothing: grayscale;
+		}
+
+	</style>
+</head>
+
+<body>
+	<!-- start: header-->
+	@@include('./common/header.html')
+	<!--end :header-->
+	<!--start:联系我们-->
+	<div class="synopsis">
+		<div class="synopsis-top">
+			<div class="menu">
+				<div class="btn">常见问题 <img src="../public/images/frommune.png">
+					<ul class="menuShow" style="display: none;">
+						<li><a href="#">专业知识</a></li>
+						<li><a href="#">常见问题</a></li>
+						<li><a href="">视频教学</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="address">当前的位置：<a href="">星航道</a> &gt; <a href="/">联系我们</a> &gt;</div>
+		</div>
+		<div class="synopsis-bottom">
+			<div class="synopsis-act">
+				<div id="callus">
+					<h1>联系我们</h1>
+					<p>联系方式：010-80320881</p>
+					<p>北京校区：北京市房山区窦店镇北京民族大学（总部）</p>
+					<div style="margin: 0 auto; width: 680px; height: 400px;margin: 0 auto;"></div>
+					<p>一、北 京 站</p>
+					<p>①公交车路线 ：</p>
+					<p>乘20路公交至天桥站，转乘835快公交（慢车-开往韩村河方向.）---七里店民族大学站下车，路口往南走200米；或乘20路公交至天桥站，转乘835快公交（快 车-开往窦店方向.窦店高速）---北京民族大学站下车即到（正门口）。</p>
+					<p>②乘地铁路线：</p>
+					<p>北京站地铁2号线至复兴门站----转1号线至军事博物馆----转9号线至郭公 庄----转房山线至良乡南关地铁站----乘出租车15分钟即到学校正门口</p>
+					<p>二、北京西站</p>
+					<p>①公交车路线：</p>
+					<p>从西站南广场出口南走步行150米左右十字路口（右拐）往西步行至六里桥东公交站（章丘大厦前面） 乘835快公交（慢车-开往韩村河方向）七里店民族大学站下车，路口往南走200米即到；或 乘835快公交（快车-开往窦店方向.窦店高速）---北京民族大学站下车即到</p>
+					<p>②乘地铁路线：</p>
+					<p>北京西站地铁9号线至郭公庄站----转房山线至良乡南关地铁站----乘出租车15分钟即到学校正门口</p>
+					<p>三、北京南站</p>
+					<p>①公交车路线：</p>
+					<p>从北京南站出口步行800米，从南站公交站乘坐106公交至北纬路东口站下车----步行130米至天桥汽车站 乘835快公交（慢车-开往韩村河方向）七里店民族大学站下车，路口往南走200米即到；或乘835快公交（快车-开往窦店方向.窦店高速）---北京民族大学站下车即到（正门口）。</p>
+					<p>②乘地铁路线：</p>
+					<p>北京南站地铁4号线大兴线至菜市口站----转7号线至北京西站----转9号线至郭公庄站----转房山线至良乡南关地铁站----乘出租车15分钟即到学校正门口（校车接送）</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end:联系我们-->
+	@@include('./common/newFooter.html')
+	<!--	start:footer-->
+	@@include('./common/footer.html')
+	<!--	start:end-->
+	<script>
+		$('.synopsis .menu').on({
+			mouseover: function() {
+				$('.synopsis .menuShow').show()
+			},
+			mouseout: function() {
+				$('.synopsis .menuShow').hide()
+			}
+		})
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+@import 'common/style.scss';
+.newBase {
+	@include clear;
+	.bt {
+		width: 6.6rem;
+		margin: 0 auto;
+		height: 0.6rem;
+		line-height: 0.6rem;
+		border-bottom: 1px solid #ccc;
+		.left {
+			float: left;
+			em {
+			 margin: 0 0.1rem;
+			}
+		}
+		.right{
+			float: right;
+			
+		}
+	}
+	.base-list {
+		@include clear;
+		width: 6.6rem;
+		margin: 0 auto;
+		.base-item {
+			@include clear;
+			border-bottom: 1px dashed #dcdcdc;
+			padding: 0.4rem 0;
+			position: relative;
+			.img {
+				width: 2.6rem;
+				float: left;
+				img {
+					width: 2.6rem;
+					display: block;
+				}
+			}
+			p{
+				float: right;
+				width: 3.8rem;
+				text-align: left;
+			}
+			.p2{
+				text-align: right;
+				padding-bottom: 0.4rem;
+			}
+			.p3{
+				position: absolute;
+				bottom: 0.4rem;
+			    left: 2.8rem;
+				height: 0.4rem;
+				color: #ccc;
+			}
+		}
+	}
+	.page {
+		text-align: center;
+		margin: 0.3rem 0;
+		a{
+			 display: inline-block;
+			padding: 0.1rem 0.2rem;
+			background: #ff7800;
+			border:1px solid #ccc;
+			border-radius: 0.1rem;
+			color: #fff;
+		}
+		.on {
+			background: #fff;
+			color: #888；
+		}
+	}
+}
+.certificate {
+	@include clear;
+	.bt {
+		width: 6.6rem;
+		margin: 0 auto;
+		height: 0.6rem;
+		line-height: 0.6rem;
+		border-bottom: 1px solid #ccc;
+		.left {
+			float: left;
+			em {
+			 margin: 0 0.1rem;
+			}
+		}
+		.right{
+			float: right;
+			
+		}
+	}
+	.base-list {
+		@include clear;
+		width: 6.6rem;
+		margin: 0 auto;
+		.base-item {
+			@include clear;
+			border-bottom: 1px dashed #dcdcdc;
+			padding: 0.4rem 0;
+			position: relative;
+			.img {
+				
+				float: left;
+				width: 2.6rem;
+				img {
+					width: 2.6rem;
+					display: block;
+				}
+			}
+			.right {
+				float: left;
+				width: 3.6rem;
+				margin-left: 0.2rem;
+				text-align: left;
+				h2 {
+					font-size: 0.26rem;
+					text-align: left;
+				}
+				div{
+					font-size: 0.24rem;
+					color: #ff7800;
+					text-align: left;
+				}
+				p{
+					text-indent: 2em;
+					text-align: left;
+				}
+				.btn {
+					display: block;
+					width: 2rem;
+					border: 1px solid #ff7800;
+					height: 0.6rem;
+					display: block;
+					line-height: 0.6rem;
+					margin-top:0.2rem;
+					color: #ff7800;
+				}
+			}
+		}
+	}
+	.page {
+		text-align: center;
+		margin: 0.3rem 0;
+		a{
+			 display: inline-block;
+			padding: 0.1rem 0.2rem;
+			background: #ff7800;
+			border:1px solid #ccc;
+			border-radius: 0.1rem;
+			color: #fff;
+		}
+		.on {
+			background: #fff;
+			color: #888；
+		}
+	}
+}
+.show-wrapper {
+	.bt {
+		width: 6.6rem;
+		margin: 0 auto;
+		height: 0.6rem;
+		line-height: 0.6rem;
+		border-bottom: 1px solid #ccc;
+		.left {
+			float: left;
+			em {
+			 margin: 0 0.1rem;
+			}
+		}
+		.right{
+			float: right;
+			
+		}
+	}
+	width: 6.6rem;
+	margin: 0 auto;
+	h2 {
+		text-align: center;
+		font-size: 0.3rem;
+		margin-top: 0.3rem; 
+	}
+	.p1 {
+		margin-top: 0.2rem; 
+		span {
+			margin-right: 0.2rem;
+			color: #ccc;
+			font-size: 0.24rem;
+		}
+	}
+	img {
+		width: 6.6rem;
+		margin: 0.4rem auto;
+	}
+	p {
+		font-size: 0.32rem;
+		text-align: center;
+		line-height: 0.5rem;;
+	}
+	.btn {
+		width: 6.6rem;
+		@include clear;
+		a{
+			display: block;
+			width: 3.2rem;
+			height: 1rem;
+			background: #ff7800;
+			line-height: 1rem;
+			color: #fff;
+			font-size: 0.26rem;
+		}
+		.btn1{
+			float: left;
+		}
+		.btn2{
+			float: right;
+		}
+		img {
+			width: 0.4rem;
+			height: 0.4rem;
+			display: inline-block;
+			float: left;
+			margin: 0;
+			margin-top: 0.3rem; 
+			margin-left: 0.2rem;
+		}
+	}
+	.showPage {
+		margin: 0.3rem 0;
+		a {
+			display: block;
+			line-height: 0.5rem;
+			text-align: left;
+			span {
+				color: #ff7800;
+			}
+		}
+		.on {
+			background: #fff;
+			color: #888；
+		}
+	}
+}
+
+
+
+
+
+
+

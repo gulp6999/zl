@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<title>首页</title>
+	<script>
+	 (function() { var h = window.document.documentElement, dir = 1, timer, s = function() { h.setAttribute('data-dir', dir); var w = h.getBoundingClientRect().width, f = w / (7.2 * dir); h.style.fontSize = f + 'px'; document.addEventListener('DOMContentLoaded', function() { document.body.style.fontSize = 0.24 + 'rem'; }); var sh = parseFloat(h.style.fontSize), eh = parseFloat(window.getComputedStyle(h).fontSize); if (sh !== eh) h.style.fontSize = sh * (sh / eh) + 'px'; }; window.addEventListener('resize', function() { clearTimeout(timer), timer = setTimeout(s, 300) }, !1), window.addEventListener('pageshow', function(b) { b.persisted && (clearTimeout(time), time = setTimeout(s, 300)) }, !1), s(); })();
+	</script>
+	<link rel="stylesheet" href="../public/css/base.css">
+	<link rel="stylesheet" href="../public/css/style.css">
+	<link rel="stylesheet" href="../public/swiper/css/swiper.min.css">
+	<script src="../public/swiper/js/swiper.min.js"></script>
+	<script src="../public/js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+	@@include('./common/header.html')
+	@@include('./common/banner.html')
+	<!--视频列表-->
+	@@include('common/baseList.html')
+	@@include('common/showFooter.html')
+	@@include('common/footer.html')
+	<script>
+		var swiper = new Swiper('.xyhj-container', {
+      		spaceBetween: 30,
+      		centeredSlides: true,
+			loop:true,
+      		autoplay: {
+        		delay: 2500,
+        		disableOnInteraction: false,
+      		},
+      		navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+      		},
+    });
+		div.show
+	</script>
+</body>
+</html>

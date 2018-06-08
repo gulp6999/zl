@@ -1,0 +1,80 @@
+<div class="header-wrapper">
+  <div class="header-top">
+    <div class="top-wrapper">
+      <div class="left">中力健身学院·中国唯一实战型健身教练培训学院,国家健身教练职业资格证培训基地</div>
+      <div class="right"><a href="#">常规问题</a><span>|</span><a href="#">网站地图</a></div>
+    </div>
+  </div>
+  <div class="header-midder">
+    <div class="midder-wrapper">
+      <div class="logo">
+        <img src="./public/images/logo_01.png">
+        <div>
+          <h1>中力健身学院</h1>
+          <p>零基础健身教练培训基地</p>
+        </div>
+      </div>
+      <div class="list">
+        <div><i></i><p>零元入学<br><span>零首付</span><em>零学费</em></p></div>
+        <div><i></i> <p>就业保障<br><span>100%就业保障</span></p></div>
+        <div><i></i><p>专属营养餐<br><span>营业搭配更合理</span></p></div>
+      </div>
+    </div>
+  </div>
+  <div class="header-bottom">
+    <div class="bottom-wrapper">
+      <div class="bottom-left">
+        <div class="top">
+          <p>获取您的专属健身计划</p><i><img src="./public/images/frommune.png" ></i>
+         </div>
+        <div class="form-wrapper" style="z-index: 9999">
+          <div style="overflow: hidden">
+            <form class="xiao-form">
+              <div class="user"><span>姓名：</span><input type="text"></div>
+              <div class="age"><span>性别：</span><input type="text"><span>年龄：</span><input type="text"></div>
+              <div class="tall"><span>身高：</span><input type="text"><span>体重：</span><input type="text"></div>
+              <div class="tel"><span>电话：</span><input type="text"></div>
+              <div class="btn"><button>提交</button></div>   
+            </form>
+            <div class="xiao-form-left">
+              <a><img src="./public/images/jt.png"></a>
+              <a><img src="./public/images/jt.png"></a>
+              <a><img src="./public/images/jt.png"></a>
+              <a><img src="./public/images/jt.png"></a>
+            </div>
+          </div>
+          <div class="list-wraper">
+            <a><p>您可能关心以下问题？</p><em><img src="./public/images/jt.png"></em></a>
+            <a><p>如何选择专业学校学习？</p><em><img src="./public/images/jt.png"></em></a>
+            <a><p>学习多久可以正式就业？</p><em><img src="./public/images/jt.png"></em></a>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-right">
+        <a href="#" class="on">首页</a>
+        <a href="#">权威证书</a>
+        <a href="#">专业课程</a>
+        <a href="#">师资力量</a>
+        <a href="#">就业服务</a>
+        <a href="#">优秀学员</a>
+        <a href="#">新闻动态</a>
+        <a href="#">学院简介</a>
+        <a href="#">证书查询</a>
+        <a href="#" class="lxwm">联系我们</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="banner-wrapper">
+  <div class="bd">
+    <ul>
+      <li style="background-image: url('http://www.zhonglifit.cn/img/003.jpg')"><a></a></li>
+    </ul>
+  </div>
+</div>
+<script>
+    $('.banner-wrapper').slide({mainCell:".bd ul",effect:"leftLoop",autoPlay:true});
+	$('.header-wrapper .top').click(function(){
+		$('.header-wrapper .form-wrapper').toggle()
+	})
+</script>
